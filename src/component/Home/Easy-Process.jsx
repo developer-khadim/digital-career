@@ -1,53 +1,145 @@
+// import React from 'react';
+// import { LuMessageSquareReply } from 'react-icons/lu';
+// import { TbAnalyze } from 'react-icons/tb';
+// import { GiGearHammer, GiStairsGoal } from 'react-icons/gi';   // react-icons
+// import process from '../../assets/process.svg';
 
-import React from "react";
-import Massage from "../../assets/massage&faq.png";
-import medal from "../../assets/medal.png";
-import resetting from "../../assets/resettings.png";
-import handshake from "../../assets/handshake.png";
+// const steps = [
+//   {
+//     icon: <LuMessageSquareReply size={24} />,
+//     title: 'You Ask',
+//     text: 'Tell us your goal; we listen, clarify requirements, and scope the task.',
+//   },
+//   {
+//     icon: <TbAnalyze size={24} />,
+//     title: 'We Analyze',
+//     text: 'We research, plan, and choose the right tools for the best outcome.',
+//   },
+//   {
+//     icon: <GiGearHammer size={24} />,            // Build icon
+//     title: 'We Build',
+//     text: 'Our team designs, develops, and iterates rapidly with rigorous quality checks.',
+//   },
+//   {
+//     icon: <GiStairsGoal size={24} />,            // Success icon
+//     title: 'You Succeed',
+//     text: 'Deliverables ship on time; results are tracked and support continues.',
+//   },
+// ];
+
+// const EasyProcess = () => {
+//   return (
+//     <div className="w-full px-4 py-10 sm:px-6 md:px-12 lg:px-40 xl:px-40 text-white">
+//       <section className="text-gray-600 body-font">
+//         <div className="  py-1 mx-auto items-center flex flex-col lg:flex-row gap-2 lg:gap-72">
+//           {/* Timeline (left on desktop, full-width on mobile) */}
+//           <div className="w-full lg:w-2/5">
+//             {steps.map((step, idx) => (
+//               <div key={idx} className="flex relative pb-10">
+//                 {/* vertical line */}
+//                 {idx < steps.length - 1 && (
+//                   <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+//                     <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+//                   </div>
+//                 )}
+
+//                 {/* icon */}
+//                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary inline-flex items-center justify-center text-white relative z-10">
+//                   {step.icon}
+//                 </div>
+
+//                 {/* content */}
+//                 <div className="flex-grow pl-4">
+//                   <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+//                     {step.title}
+//                   </h2>
+//                   <p className="leading-relaxed text-gray-700">{step.text}</p>
+//                 </div>
+//               </div>
+//             ))}
+//           </div>
+
+//           {/* Image (right on desktop, full-width below timeline on mobile) */}
+//           <img
+//             className="w-full lg:w-2/5 rounded-lg object-cover container mx-auto"
+//             src={process}
+//             alt="Process illustration"
+//           />
+//         </div>
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default EasyProcess;
+import React from 'react';
+import { LuMessageSquareReply } from 'react-icons/lu';
+import { TbAnalyze } from 'react-icons/tb';
+import { GiGearHammer, GiStairsGoal } from 'react-icons/gi';   // react-icons
+import process from '../../assets/process.svg';
+
+const steps = [
+  {
+    icon: <LuMessageSquareReply size={24} />,
+    title: 'You Ask',
+    text: 'Tell us your goal; we listen, clarify requirements, and scope the task.',
+  },
+  {
+    icon: <TbAnalyze size={24} />,
+    title: 'We Analyze',
+    text: 'We research, plan, and choose the right tools for the best outcome.',
+  },
+  {
+    icon: <GiGearHammer size={24} />,            // Build icon
+    title: 'We Build',
+    text: 'Our team designs, develops, and iterates rapidly with rigorous quality checks.',
+  },
+  {
+    icon: <GiStairsGoal size={24} />,            // Success icon
+    title: 'You Succeed',
+    text: 'Deliverables ship on time; results are tracked and support continues.',
+  },
+];
 
 const EasyProcess = () => {
-  const ProcessData = [
-    { icon: Massage, id: "01", label: "YOU ASK" },
-    { icon: resetting, id: "02", label: "WE ANALYZE" },
-    { icon: handshake, id: "03", label: "WE BUILD" },
-    { icon: medal, id: "04", label: "YOU SUCCEED" },
-  ];
-// asd
   return (
-    <div className="w-full px-3 py-10 sm:px-2 md:px-12 xl:px-40 lg:px-40 text-white bg-gradient-to-r from-[#FF9900] to-[#F2CB00]">
-      {/* Header */}
-      <div className="text-center flex flex-col justify-center items-center mb-10">
-        <span className="font-semibold text-white">How To Start</span>
-        <h1 className="text-4xl font-bold text-primary pt-2 pb-3">
-          Easy Process
-        </h1>
-        <p className="text-[16px] text-primary w-80 text-center">
-          We specialize in helping you build a team of expert developers,
-          testers, and leaders.
-        </p>
-      </div>
-
-      {/* Process Steps */}
-      <div className="flex justify-between items-center w-full mt-10">
-        {ProcessData.map((data, index) => (
-          <div key={index} className="flex flex-col items-center text-center">
-            {/* Icon */}
-            <div className=" flex items-center justify-center ">
-              <img src={data.icon} alt={data.label} className="w-20 h-20" />
-            </div>
-
-            {/* ID + Label */}
-            <div className="mt-4 flex justify-center items-center gap-2 ">
-              <span className="block text-xl font-bold text-primary">
-                {data.id}
-              </span>
-              <span className="block text-lg text-primary font-medium">
-                {data.label}
-              </span>
-            </div>
+    <div className="w-full px-4 py-10 sm:px-6 md:px-12 lg:px-40 xl:px-40 text-white">
+      <section className="text-gray-600 body-font">
+        <div className="py-1 mx-auto items-start flex flex-col items-center lg:flex-row gap-8 lg:gap-16">
+          {/* Timeline (left on desktop, full-width on mobile) */}
+          <div className="w-full lg:w-1/2">
+            {steps.map((step, idx) => (
+              <div key={idx} className="flex relative pb-5 lg:pb-20">
+                {/* vertical line */}
+                {idx < steps.length - 1 && (
+                  <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                    <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+                  </div>
+                )}
+                {/* icon */}
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary inline-flex items-center justify-center text-white relative z-10">
+                  {step.icon}
+                </div>
+                {/* content */}
+                <div className="flex-grow pl-4">
+                  <h2 className="font-semibold title-font lg:text-[18px] text-[16px] text-gray-900 mb-1 tracking-wider">
+                    {step.title}
+                  </h2>
+                  <p className="leading-relaxed text-gray-700">{step.text}</p>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+          {/* Image (right on desktop, full-width below timeline on mobile) */}
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+            <img
+              className="w-full max-w-md lg:max-w-none rounded-lg object-cover"
+              src={process}
+              alt="Process illustration"
+            />
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

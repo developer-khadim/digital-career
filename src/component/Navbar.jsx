@@ -1,14 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { RiMenu4Fill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
 import { ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLocation } from 'react-router-dom';  
 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
+  const location = useLocation();
+
+
+  useEffect(() => {
+    const handleTouchMove = (e) => {
+      if (isOpen) {
+        e.preventDefault(); // 🚫 block scroll on touch
+      }
+    };
+
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+      document.addEventListener("touchmove", handleTouchMove, { passive: false });
+    } else {
+      document.body.style.overflow = "auto";
+      document.removeEventListener("touchmove", handleTouchMove);
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+      document.removeEventListener("touchmove", handleTouchMove);
+    };
+  }, [isOpen]);
+
 
   const navLinks = [
     { to:'/' , label:'Home' },
@@ -31,12 +56,16 @@ const Navbar = () => {
         <nav className="hidden lg:flex items-center space-x-2 lg:space-x-4">
           {navLinks.map((link) => (
             <Link
-              key={link.to}
-              to={link.to}
-              className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-100/60 transition-colors lg:px-4"
-            >
-              {link.label}
-            </Link>
+            key={link.to}
+            to={link.to}
+            className={`px-3 py-2 rounded-md text-sm font-medium transition-colors lg:px-4 
+              ${location.pathname === link.to 
+                ? "text-secondary font-semibold" 
+                : "text-gray-700 hover:text-primary hover:bg-gray-100/60"}`}
+          >
+            {link.label}
+          </Link>
+          
           ))}
         </nav>
 
@@ -59,13 +88,13 @@ const Navbar = () => {
           <button
             aria-label="Toggle Menu"
             aria-expanded={isOpen}
-            className="w-12 h-12 flex items-center justify-center rounded-lg hover:bg-gray-100 transition bg-white border-2 border-gray-300 shadow-sm"
+            className="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-100 transition bg-white border-2 border-gray-300 shadow-sm"
             onClick={toggleMenu}
           >
             {isOpen ? (
-              <IoCloseSharp size={28} className="text-gray-700" />
+              <IoCloseSharp size={25} className="text-gray-700" />
             ) : (
-              <RiMenu4Fill size={28} className="text-gray-700" />
+              <RiMenu4Fill size={25} className="text-gray-700" />
             )}
           </button>
         </div>
@@ -91,7 +120,8 @@ const Navbar = () => {
                 exit={{ x: '100%' }}
                 transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                 className="fixed top-0 left-0 h-screen w-full bg-white shadow-2xl lg:hidden z-[9999] overflow-y-auto"
-              >                                                                                                       {/* Header */}
+              >
+                 {/* Header */}
                  <div className="flex items-center justify-between p-6 border-b border-gray-200/50 bg-white w-full">
                    <div className="flex items-center space-x-3">
                      <img src="/dc.png" alt="logo" className="w-8 h-8" />
@@ -109,14 +139,18 @@ const Navbar = () => {
                 {/* Links */}
                <nav className="p-6 space-y-3 w-full">
                   {navLinks.map((link) => (
-                    <Link
-                      key={link.to}
-                      to={link.to}
-                      onClick={() => setIsOpen(false)}
-                      className="block w-full px-6 py-4 rounded-lg text-xl  text-primary "
-                    >
-                      {link.label}
-                    </Link>
+                 <Link
+                 key={link.to}
+                 to={link.to}
+                 onClick={() => setIsOpen(false)}
+                 className={`block w-full px-6 py-4 rounded-lg text-xl transition-colors
+                   ${location.pathname === link.to 
+                     ? "text-secondary font-semibold" 
+                     : "text-primary hover:text-secondary"}`}
+               >
+                 {link.label}
+               </Link>
+               
                   ))}
                 {/* CTA */}
                  <div className="mt-8 pt-6 px-6">
