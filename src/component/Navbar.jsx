@@ -4,7 +4,7 @@ import { RiMenu4Fill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
 import { ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { label } from 'framer-motion/client';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const navLinks = [
     { to:'/' , label:'Home' },
-    { to: '/how-to-start', label: 'How to start' },
+    { to: '/what-are-we', label: 'What Are We' },
     { to: '/services', label: 'Services' },
     { to: '/technologies', label: 'Technologies' },
     { to: '/testimonials', label: 'Testimonials' },

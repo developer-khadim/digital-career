@@ -7,7 +7,8 @@ import Services from './page/Services/Services'
 import Testimonials from './page/Testimonials/Testimonials'
 import Technologies from './page/Technologies/Technologies'
 import Contact from './page/Contact Us/Contact'
-import HowToStart from './page/How to start/howtostart' 
+import WhatAreWe from './page/WhatAreWe/WhatAreWe'
+ 
 const App = () => {
   return (
    
@@ -20,7 +21,7 @@ const App = () => {
             <Route path="/technologies" element={<Technologies />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path='/how-to-start' element={<HowToStart/> } />
+            <Route path="/what-are-we" element={<WhatAreWe />} />
           </Route>
         </Routes>
       </Router>
