@@ -518,7 +518,7 @@ const Hero = () => {
 
       {/* ---------- IMAGE SECTION ---------- */}
       <div
-        className="
+        className=" overflow-hidden
           w-full lg:w-[65%]
           -mt-6 lg:mt-0 xl:-ml-52
           flex justify-center lg:justify-start

@@ -19,11 +19,14 @@ const Home = () => {
 
   return (
     <>
-      <Hero />
+    <div className='overflow-x-hidden' > 
+      
+    <Hero />
       <HeroBottom />
       <EasyProcess />
       <Specialized />
       <TechnologiesCrosale />
+    </div>
     </>
   );
 };
