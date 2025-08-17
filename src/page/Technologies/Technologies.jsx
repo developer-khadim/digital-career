@@ -1,8 +1,9 @@
 import React from 'react'
+import UnderDevelopment from '../UnderDevelopment'
 
 const Technologies = () => {
   return (
-    <div>Technologies</div>
+    <div><UnderDevelopment/> </div>
   )
 }
 

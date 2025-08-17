@@ -1,19 +1,31 @@
-import React from 'react'
-import Hero from '../../component/Home/hero'
-import HeroBottom from '../../component/Home/HeroBottom'
-import EasyProcess from '../../component/Home/Easy-Process'
-import HireRemort from '../../component/Home/HireRemort'
+import React, { useEffect } from 'react';
+import Hero from '../../component/Home/hero';
+import HeroBottom from '../../component/Home/HeroBottom';
+import EasyProcess from '../../component/Home/Easy-Process';
+import Specialized from '../../component/Home/Specialized';
+import TechnologiesCrosale from '../../component/Home/TechnologiesCrosale';
+import { useLocation } from 'react-router-dom';
 
 const Home = () => {
+  const location = useLocation(); // ✅ correct usage
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      document.title = "Home | Digital Career Agency";
+    } else {
+      document.title = "Digital Career Agency"; // fallback
+    }
+  }, [location]);
+
   return (
     <>
-    <Hero/>
-    <HeroBottom/>
-    <EasyProcess/>
-
-    {/* <HireRemort/> */}
+      <Hero />
+      <HeroBottom />
+      <EasyProcess />
+      <Specialized />
+      <TechnologiesCrosale />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
