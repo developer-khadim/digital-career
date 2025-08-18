@@ -41,6 +41,7 @@ const Navbar = () => {
     { to: '/services', label: 'Services' },
     { to: '/technologies', label: 'Technologies' },
     { to: '/testimonials', label: 'Testimonials' },
+    { to:'/careers', label:'Careers' }
   ];
 
   return (
@@ -71,14 +72,10 @@ const Navbar = () => {
 
         {/* Desktop Actions */}
         <div className="hidden lg:flex items-center space-x-2 lg:space-x-4">
-          <Link to="#">
-            <button className="flex items-center gap-1 lg:gap-2 text-primary border-2 border-primary px-2 py-1 lg:px-3 text-xs lg:text-sm font-semibold rounded-md transform hover:bg-secondary hover:text-white hover:border-secondary duration-300">
-            Career <ArrowRight size={16} className="lg:w-5 lg:h-5" />
-            </button>
-          </Link>
+          
           <Link to="/contact">
-            <button className="text-secondary font-semibold text-sm lg:text-base transform hover:-translate-y-0.5 transition-all duration-300">
-              Contact Us
+            <button className=" border-2 flex  items-center gap-2 border-primary px-2 py-1 lg:px-3 rounded-md  hover:bg-secondary hover:text-white hover:border-secondary duration-300 text-secondary font-semibold text-sm lg:text-base transform hover:-translate-y-0.5 transition-all ">
+              Contact Us <ArrowRight size={20} />
             </button>
           </Link>
         </div>
