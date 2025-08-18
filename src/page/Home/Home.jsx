@@ -5,6 +5,7 @@ import EasyProcess from '../../component/Home/Easy-Process';
 import Specialized from '../../component/Home/Specialized';
 import TechnologiesCrosale from '../../component/Home/TechnologiesCrosale';
 import { useLocation } from 'react-router-dom';
+import From from '../../component/From';
 
 const Home = () => {
   const location = useLocation(); // ✅ correct usage
@@ -26,6 +27,7 @@ const Home = () => {
       <EasyProcess />
       <Specialized />
       <TechnologiesCrosale />
+      <From/>
     </div>
     </>
   );
