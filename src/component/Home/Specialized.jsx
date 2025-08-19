@@ -83,7 +83,7 @@ const zoomIn = {
 
 const Specialized = () => {
   return (
-    <section className="w-full px-4 py-10 sm:px-6 md:px-12 lg:px-40 xl:px-40 body-font bg-white">
+    <section className="w-full px-4 py-10 sm:px-6 md:px-12 lg:px-40 xl:px-40  body-font bg-white">
       {/* Heading */}
       <div className="pb-6">
         <motion.h2

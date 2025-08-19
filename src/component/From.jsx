@@ -4,7 +4,7 @@ import img from "../assets/formpic.png";
 
 const From = () => {
   return (
-    <div className="w-full min-h-[90vh] px-4 py-10 sm:px-8 lg:px-20 flex items-center justify-center bg-white">
+    <div className="w-full min-h-[90vh] px-4 py-10  sm:px-8 lg:px-20 flex items-center justify-center bg-white">
       <div className="w-full max-w-6xl flex flex-col lg:flex-row bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-200">
         
         {/* Left Side - Image */}

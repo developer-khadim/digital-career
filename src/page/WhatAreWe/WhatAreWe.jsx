@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import UnderDevelopment from '../UnderDevelopment';
 import { useLocation } from 'react-router-dom';
+import Hero from '../../component/Aboutus/Hero';
 
 const WhatAreWe = () => {
   const location = useLocation();
@@ -15,7 +16,7 @@ const WhatAreWe = () => {
 
   return (
     <div>
-      <UnderDevelopment />
+      <Hero/>
     </div>
   );
 };

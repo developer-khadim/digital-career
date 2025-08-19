@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import Hero from '../../component/Careers/Hero'
 import { useLocation } from 'react-router-dom';
 import From from '../../component/From';
-import ContactForm from '../../component/Careers/ContactForm';
 
 const Careers = () => {
   const location = useLocation(); 
@@ -16,9 +15,11 @@ const Careers = () => {
   }, [location]);
   return (
     <>
-        <Hero/>
+      <div className='select-none' >
+          <Hero/>
         <From/>
-        {/* <ContactForm/> */}
+      </div>
+       
     </>
   )
 }

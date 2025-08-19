@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
 import UnderDevelopment from '../UnderDevelopment'
 import { useLocation } from 'react-router-dom';
+import Hero from '../../component/OurServices/Hero';
+import ServicesItems from '../../component/OurServices/ServicesItems';
+import From from '../../component/From';
 
 const Services = () => {
   const location = useLocation(); 
@@ -13,7 +16,13 @@ const Services = () => {
     }
   }, [location]);
   return (
-    <div><UnderDevelopment/> </div>
+    <>
+      <div className='select-none' >
+        <Hero/>
+        <ServicesItems/>
+          <From/>
+      </div>
+    </>
   )
 }
 
