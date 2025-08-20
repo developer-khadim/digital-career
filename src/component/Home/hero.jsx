@@ -319,7 +319,7 @@ const Hero = () => {
         <p
           className="w-full lg:w-[80%] 
                      text-[16px] sm:text-[18px] md:text-[20px] 
-                     text-primary leading-relaxed"
+                     text-black leading-relaxed"
         >
           Professional digital services for students, entrepreneurs, and
           businesses. From Flutter development to AI projects, social media

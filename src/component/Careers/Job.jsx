@@ -159,21 +159,23 @@ const Job = () => {
       </h1>
 
       {/* Category Tabs */}
-      <div className="flex flex-wrap gap-2 sm:gap-3 mb-6">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setActiveCategory(cat)}
-            className={`px-4 py-2 rounded-md font-semibold text-sm sm:text-base transition-all duration-200
-              ${activeCategory === cat
-                ? "bg-primary text-white"
-                : "bg-gray-100 text-gray-700 hover:bg-primary hover:text-white"
-              }`}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
+      {/* Category Tabs */}
+<div className="flex flex-nowrap overflow-x-auto scrollbar-hide gap-2 sm:gap-3 mb-6">
+  {categories.map((cat) => (
+    <button
+      key={cat}
+      onClick={() => setActiveCategory(cat)}
+      className={`flex-shrink-0 px-4 py-2 rounded-md font-semibold text-sm sm:text-base transition-all duration-200
+        ${activeCategory === cat
+          ? "bg-secondary text-white"
+          : "bg-gray-100 text-gray-700 hover:bg-secondary hover:text-white"
+        }`}
+    >
+      {cat}
+    </button>
+  ))}
+</div>
+
 
       {/* Jobs List */}
       <div className="bg-gray-100 p-4 sm:p-6 lg:p-8 rounded-lg shadow-md">

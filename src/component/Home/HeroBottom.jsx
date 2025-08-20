@@ -140,7 +140,7 @@ const HeroBottom = () => {
                 {idx === 1 && "Engineer Your Solution"}
                 {idx === 2 && "Re-Engineer Your Business Process"}
               </h2>
-              <p className="text-[14px] text-primary leading-relaxed">
+              <p className="text-[14px] text-black leading-relaxed">
                 {idx === 0 &&
                   "We dive deep into your operational, technological, and strategic challenges to truly understand your vision. Then, we design a clear, result-driven roadmap that guides you toward sustainable growth and measurable success."}
                 {idx === 1 &&
