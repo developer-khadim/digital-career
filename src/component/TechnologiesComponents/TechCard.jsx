@@ -16,7 +16,7 @@ const flutter = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flut
 const android = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg";
 const laravel = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg";
 const angular = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg";
-const vue = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg";
+const next = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg";
 
 // Tab categories with Lucide icons
 const tabs = [
@@ -27,7 +27,16 @@ const tabs = [
   { id: "mobile", label: "Mobile App", icon: Smartphone },
   { id: "databases", label: "Databases", icon: Database },
   { id: "devops", label: "DevOps", icon: Cloud },
+  { id: "datascience", label: "Data Science", icon: Cpu },
+  { id: "dataanalytics", label: "Data Analytics", icon: Database },
+  { id: "machinelearning", label: "Machine Learning", icon: Cpu },
+  { id: "deeplearning", label: "Deep Learning", icon: Cpu },
+  { id: "wordpress", label: "WordPress", icon: Globe },
+  { id: "graphicdesigning", label: "Graphic Designing", icon: Code },
+  { id: "dataannotations", label: "Data Annotations", icon: Database },
 ];
+
+
 
 // Technology data with actual images
 const technologies = {
@@ -36,8 +45,8 @@ const technologies = {
     { name: "CSS3", category: "frontend", icon: css },
     { name: "JavaScript", category: "frontend", icon: js },
     { name: "React", category: "frontend", icon: react },
-    { name: "Vue.js", category: "frontend", icon: vue },
-    { name: "Angular", category: "frontend", icon: angular },
+    { name: "Next js", category: "frontend", icon: next },
+    { name: "Tailwind Css", category: "frontend", icon: angular },
   ],
   backend: [
     { name: "Node.js", category: "backend", icon: node },
@@ -49,7 +58,8 @@ const technologies = {
     { name: "Laravel", category: "frameworks", icon: laravel },
     { name: "React", category: "frameworks", icon: react },
     { name: "Angular", category: "frameworks", icon: angular },
-    { name: "Vue.js", category: "frameworks", icon: vue },
+    // Vue.js icon missing, so using react as placeholder
+    { name: "Vue.js", category: "frameworks", icon: react },
   ],
   mobile: [
     { name: "Flutter", category: "mobile", icon: flutter },
@@ -61,6 +71,38 @@ const technologies = {
     { name: "MongoDB", category: "databases", icon: mongodb },
   ],
   devops: [{ name: "Node.js", category: "devops", icon: node }],
+  datascience: [
+    { name: "Python", category: "datascience", icon: python },
+    { name: "R", category: "datascience", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" },
+    { name: "Jupyter", category: "datascience", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" },
+  ],
+  dataanalytics: [
+    { name: "Excel", category: "dataanalytics", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/excel/excel-original.svg" },
+    { name: "Tableau", category: "dataanalytics", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" },
+    { name: "Power BI", category: "dataanalytics", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powerbi/powerbi-original.svg" },
+  ],
+  machinelearning: [
+    { name: "TensorFlow", category: "machinelearning", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+    { name: "Scikit-learn", category: "machinelearning", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikit-learn/scikit-learn-original.svg" },
+    { name: "PyTorch", category: "machinelearning", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+  ],
+  deeplearning: [
+    { name: "Keras", category: "deeplearning", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" },
+    { name: "TensorFlow", category: "deeplearning", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+    { name: "PyTorch", category: "deeplearning", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+  ],
+  wordpress: [
+    { name: "WordPress", category: "wordpress", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" },
+  ],
+  graphicdesigning: [
+    { name: "Adobe Photoshop", category: "graphicdesigning", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" },
+    { name: "Adobe Illustrator", category: "graphicdesigning", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" },
+    { name: "Figma", category: "graphicdesigning", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+  ],
+  dataannotations: [
+    { name: "Label Studio", category: "dataannotations", icon: "https://avatars.githubusercontent.com/u/60428229?s=200&v=4" },
+    { name: "CVAT", category: "dataannotations", icon: "https://avatars.githubusercontent.com/u/34285844?s=200&v=4" },
+  ],
 };
 
 // Image component for technology icons

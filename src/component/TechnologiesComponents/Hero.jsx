@@ -36,7 +36,7 @@ const Hero = () => {
             <h1 className="text-4xl text-primary font-semibold">
               Technologies
             </h1>
-            <p className="text-black text-sm w-2/4 sm: w-full ">
+            <p className="text-black text-sm w-2/4 sm:w-full ">
               Using the right technology for the right problem is our mantra. We
               are agile about learning new processes and tools to save time and
               reduce complexity

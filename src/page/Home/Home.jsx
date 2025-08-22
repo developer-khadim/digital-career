@@ -4,6 +4,7 @@ import HeroBottom from '../../component/Home/HeroBottom';
 import EasyProcess from '../../component/Home/Easy-Process';
 import Specialized from '../../component/Home/Specialized';
 import TechnologiesCrosale from '../../component/Home/TechnologiesCrosale';
+import TestimonialsSection from '../../component/Testimonials/TestimonialsSection';
 import { useLocation } from 'react-router-dom';
 import From from '../../component/From';
 
@@ -20,13 +21,13 @@ const Home = () => {
 
   return (
     <>
-    <div className='overflow-x-hidden  select-none' > 
-      
-    <Hero />
+    <div className='overflow-x-hidden select-none'> 
+      <Hero />
       <HeroBottom />
       <EasyProcess />
       <Specialized />
       <TechnologiesCrosale />
+      <TestimonialsSection />
       <From/>
     </div>
     </>
