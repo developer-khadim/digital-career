@@ -1,8 +1,8 @@
 import React from "react";
 import bgoverlay from "../../assets/herofromoverlay.png";
 import herobg from "../../assets/herofrom.png";
-import { FaBriefcase, FaGraduationCap, FaHandshake } from 'react-icons/fa';
-import { BsGraphUpArrow } from 'react-icons/bs';
+// import { FaBriefcase, FaGraduationCap, FaHandshake } from 'react-icons/fa';
+// import { BsGraphUpArrow } from 'react-icons/bs';
 
 const Hero = () => {
   return (
@@ -21,9 +21,9 @@ const Hero = () => {
         {/* Text Content */}
         <div className="relative z-20 w-full px-4 py-6 xs:px-5 sm:px-6 md:px-8 lg:px-10 xl:px-20 2xl:px-40 h-[500px] flex flex-col items-center justify-center gap-6 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl text-white font-bold">
-            About <span className="text-secondary">Digital Career Agency</span>
+            <span className="text-secondary"> About </span>Digital Career Agency
           </h1>
-          <p className="text-white text-base sm:text-lg md:text-xl max-w-3xl leading-relaxed">
+          <p className="text-white text-sm sm:text-base md:text-[18px]">
             is a modern platform built to empower individuals and businesses in
             today's digital-first world. We bridge the gap between talent and
             opportunity by offering career-focused digital services, freelancing
@@ -32,66 +32,9 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Mission Section */}
-      <section className="w-full bg-gray-50 px-4 py-6 xs:px-5 sm:px-6 md:px-8 lg:px-10 xl:px-20 2xl:px-40">
-        <div className="w-full py-16">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Our Mission</h2>
-            <p className="text-gray-700 text-lg leading-relaxed">
-              To unlock digital career opportunities for freelancers, students, and businesses by providing the right tools, resources, and guidance. We aim to help people earn, grow, and thrive online through freelancing and digital skills.
-            </p>
-          </div>
-        </div>
-      </section>
+     
 
-      {/* Services Grid Section */}
-      <section className="w-full px-4 py-6 xs:px-5 sm:px-6 md:px-8 lg:px-10 xl:px-20 2xl:px-40">
-        <div className="w-full py-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">What We Do</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Freelancing Platform Management */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-secondary text-3xl mb-4">
-                <BsGraphUpArrow />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Freelancing Platform Management</h3>
-              <ul className="text-gray-600 space-y-2">
-                <li>• Profile creation and optimization</li>
-                <li>• Gig optimization and ranking</li>
-                <li>• Order handling and delivery support</li>
-              </ul>
-            </div>
-
-            {/* Digital Career Training */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-secondary text-3xl mb-4">
-                <FaGraduationCap />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Digital Career Training</h3>
-              <ul className="text-gray-600 space-y-2">
-                <li>• Hands-on internships</li>
-                <li>• Practical project exposure</li>
-                <li>• Commission-based earning</li>
-              </ul>
-            </div>
-
-            {/* Business Solutions */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-secondary text-3xl mb-4">
-                <FaBriefcase />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Business Solutions</h3>
-              <ul className="text-gray-600 space-y-2">
-                <li>• Effective outsourcing solutions</li>
-                <li>• Skilled freelancer provision</li>
-                <li>• Quality-assured services</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Target Audience Section */}
+      {/* Target Audience Section
       <section className="w-full bg-gray-50 ">
         <div className="w-full py-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">Who We Work With</h2>
@@ -113,42 +56,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Vision Section */}
-      <section className="w-full bg-primary text-white px-4 py-6 xs:px-5 sm:px-6 md:px-8 lg:px-10 xl:px-20 2xl:px-40">
-        <div className="w-full py-16">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Vision</h2>
-            <p className="text-lg leading-relaxed mb-8">
-              We envision a future where every individual in Pakistan and beyond has access to global opportunities through freelancing and digital skills. By nurturing young talent and providing them with the right direction, we aim to become a leading agency in digital careers and outsourcing.
-            </p>
-            <div className="text-xl font-semibold text-secondary">
-              "Digital Career Agency – Building Skills, Creating Opportunities."
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="w-full bg-white px-4 py-6 xs:px-5 sm:px-6 md:px-8 lg:px-10 xl:px-20 2xl:px-40">
-        <div className="w-full py-16">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-primary mb-6">Get In Touch</h2>
-            <p className="text-gray-700 mb-4">
-              Want to learn more about our services or discuss how we can help you?
-            </p>
-            <a
-              href="mailto:digitalcareerIT@gmail.com"
-              className="inline-block bg-secondary text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Contact Us
-            </a>
-          </div>
-        </div>
-      </section>
+      </section> */}
     </>
   );
 };

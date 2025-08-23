@@ -28,16 +28,16 @@ const AboutHistory = () => {
             <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-white rounded-xl shadow-xl p-6 w-full max-w-md">
               <div className="grid grid-cols-3 gap-8">
                 <div className="text-center">
-                  <h4 className="text-2xl font-bold text-primary">5+</h4>
-                  <p className="text-sm text-gray-600">Years Experience</p>
+                  <h4 className="text-2xl font-bold text-primary">10+</h4>
+                  <p className="text-sm text-gray-600">Expert Developers</p>
                 </div>
                 <div className="text-center">
-                  <h4 className="text-2xl font-bold text-primary">500+</h4>
-                  <p className="text-sm text-gray-600">Projects Done</p>
+                  <h4 className="text-2xl font-bold text-primary">50+</h4>
+                  <p className="text-sm text-gray-600">Projects Started</p>
                 </div>
                 <div className="text-center">
                   <h4 className="text-2xl font-bold text-primary">100%</h4>
-                  <p className="text-sm text-gray-600">Satisfaction</p>
+                  <p className="text-sm text-gray-600">Client Focus</p>
                 </div>
               </div>
             </div>
@@ -51,13 +51,13 @@ const AboutHistory = () => {
             className="lg:pl-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Our Story: From Vision to Global Impact
+              Our Story: Innovation Starts Here
             </h2>
             <p className="text-gray-600 mb-6">
-              Founded in 2020, Digital Career Agency emerged from a vision to bridge the gap between 
-              traditional business needs and modern digital solutions. What started as a small team of 
-              passionate technologists has grown into a global digital transformation partner, helping 
-              hundreds of businesses and individuals succeed in the digital age.
+              Founded in 2025, Digital Career Agency emerged from a vision to revolutionize the digital 
+              solutions landscape. As a dynamic startup, we bring fresh perspectives and innovative 
+              approaches to help businesses and individuals thrive in the digital age. Our commitment 
+              to excellence and cutting-edge technology sets us apart in the industry.
             </p>
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3">
@@ -65,7 +65,7 @@ const AboutHistory = () => {
                   <span className="w-2 h-2 rounded-full bg-secondary" />
                 </span>
                 <p className="text-gray-600">
-                  <strong className="text-primary">2020:</strong> Founded with a focus on web development and digital marketing
+                  <strong className="text-primary">Innovative Solutions:</strong> Specializing in modern web development, mobile apps, and digital marketing
                 </p>
               </div>
               <div className="flex items-start gap-3">
@@ -73,7 +73,7 @@ const AboutHistory = () => {
                   <span className="w-2 h-2 rounded-full bg-secondary" />
                 </span>
                 <p className="text-gray-600">
-                  <strong className="text-primary">2022:</strong> Expanded to full-stack development and AI solutions
+                  <strong className="text-primary">Expert Team:</strong> Passionate professionals with expertise in latest technologies
                 </p>
               </div>
               <div className="flex items-start gap-3">
@@ -81,7 +81,7 @@ const AboutHistory = () => {
                   <span className="w-2 h-2 rounded-full bg-secondary" />
                 </span>
                 <p className="text-gray-600">
-                  <strong className="text-primary">2025:</strong> Achieved global presence with offices in multiple countries
+                  <strong className="text-primary">Future Vision:</strong> Committed to expanding our reach and impact globally
                 </p>
               </div>
             </div>

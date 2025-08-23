@@ -6,43 +6,43 @@ const AboutFeatures = () => {
   const features = [
     {
       icon: <Target className="w-8 h-8" />,
-      title: "Global Reach",
-      description: "Operating in 15+ countries, we bring diverse perspectives and global best practices to every project."
+      title: "Fresh Perspective",
+      description: "As computer science students, we bring fresh ideas and modern approaches to every project."
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Industry Leaders",
-      description: "Our leadership team includes industry veterans with 10+ years of experience in digital transformation."
+      title: "Academic Excellence",
+      description: "Currently pursuing Computer Science with hands-on experience in latest technologies and frameworks."
     },
     {
       icon: <Award className="w-8 h-8" />,
-      title: "Success Stories",
-      description: "Over 300 successful client partnerships across various industries, from startups to enterprises."
+      title: "Client Success",
+      description: "Successfully delivered projects for 4+ clients, maintaining high standards and client satisfaction."
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Future-Ready",
-      description: "We invest in emerging technologies and continuous learning to stay ahead of industry trends."
+      title: "Up-to-Date Skills",
+      description: "Actively learning and applying the latest programming languages and development tools."
     },
     {
       icon: <BarChart className="w-8 h-8" />,
-      title: "Growth Partners",
-      description: "We don't just deliver projects; we partner in your growth journey with strategic insights."
+      title: "Affordable Solutions",
+      description: "Competitive pricing with flexible options, perfect for small businesses and startups."
     },
     {
       icon: <Code2 className="w-8 h-8" />,
-      title: "Research & Development",
-      description: "Dedicated R&D team exploring AI, blockchain, and other emerging technologies."
+      title: "Technical Background",
+      description: "Strong foundation in computer science principles and modern development practices."
     },
     {
       icon: <Rocket className="w-8 h-8" />,
-      title: "Startup Friendly",
-      description: "Special programs and flexible engagement models designed for startups and small businesses."
+      title: "Passionate Team",
+      description: "Young, energetic team dedicated to delivering quality solutions and exceeding expectations."
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "Industry Recognition",
-      description: "Award-winning agency recognized for excellence in digital innovation and client satisfaction."
+      title: "Academic Projects",
+      description: "Experience from various university projects and real-world client work combined."
     }
   ];
 
@@ -56,11 +56,11 @@ const AboutFeatures = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Why Choose Digital Career Agency?
+            Why Work With Us?
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We combine expertise, innovation, and dedication to deliver exceptional digital solutions
-            that help our clients succeed in the modern digital landscape.
+            As Computer Science students with real-world project experience, we combine academic knowledge 
+            with practical skills to deliver modern, cost-effective solutions for your digital needs.
           </p>
         </motion.div>
 

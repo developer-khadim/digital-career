@@ -74,7 +74,7 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center space-x-2 lg:space-x-4">
           
           <Link to="/contact">
-            <button className=" border-2 flex  items-center gap-2 border-primary px-2 py-1 lg:px-3 rounded-md  hover:bg-secondary hover:text-white hover:border-secondary duration-300 text-secondary font-semibold text-sm lg:text-base transform hover:-translate-y-0.5 transition-all ">
+            <button className=" border-2 flex  items-center gap-2 border-secondary px-2 py-2 lg:px-3 rounded-md  hover:bg-secondary hover:text-white hover:border-secondary duration-300 text-secondary font-semibold text-sm lg:text-base transform hover:-translate-y-0.5 transition-all ">
               Contact Us <ArrowRight size={20} />
             </button>
           </Link>

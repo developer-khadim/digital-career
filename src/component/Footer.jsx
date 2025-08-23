@@ -1,6 +1,7 @@
 import { MailIcon, MapPin, PhoneIcon } from 'lucide-react';
 import React from 'react';
 import { LiaFacebook, LiaLinkedin } from 'react-icons/lia';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -21,22 +22,11 @@ const Footer = () => {
 
           <div className="space-y-2">
             <a 
-              href="tel:+923499999999" 
-              className="flex items-center gap-2 text-sm hover:text-third transition-colors"
-            >
-              <PhoneIcon size={16} className="text-third" /> +92 349-xxxxxxx
-            </a>
-
-            <a 
               href="mailto:digitalcareerIT@gmail.com" 
-              className="flex items-center gap-2 text-sm hover:text-third transition-colors"
+              className="flex items-center text-secondary gap-2 text-sm hover:text-third transition-colors"
             >
               <MailIcon size={16} className="text-third" /> digitalcareerIT@gmail.com
             </a>
-
-            <div className="flex items-center gap-2 text-sm">
-              <MapPin size={16} className="text-third" /> Karachi, Pakistan
-            </div>
           </div>
         </div>
 
@@ -44,7 +34,7 @@ const Footer = () => {
         <div className="flex flex-col gap-3">
           <h3 className="font-bold text-lg mb-2">Company</h3>
           <nav className="flex flex-col gap-2">
-            {["About Us","Success Stories","Careers","Blog","Contact Us"].map((link, i) => (
+            {["About Us","Success Stories","Careers","Contact Us"].map((link, i) => (
               <a
                 key={i}
                 href={`/${link.toLowerCase().replace(/\s+/g, "-")}`}
@@ -62,12 +52,12 @@ const Footer = () => {
           <p className="text-sm text-gray-600 dark:text-gray-400">
             Want to join us as a creator? Apply on our website and start your journey with Digital Career.
           </p>
-          <a 
-            href="/apply" 
+          <Link 
+            to="/careers" 
             className="text-sm font-medium text-third hover:underline"
           >
             Apply Now →
-          </a>
+          </Link>
         </div>
 
         {/* Stay Updated */}
@@ -117,13 +107,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Trust Indicators */}
-      <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-        <div className="flex flex-wrap justify-center items-center gap-6 text-xs text-gray-500 dark:text-gray-400">
-          <span className="flex items-center gap-1">✓ 500+ Happy Clients</span>
-          <span className="flex items-center gap-1">✓ 99.9% Uptime SLA</span>
-        </div>
-      </div>
     </footer>
   );
 };

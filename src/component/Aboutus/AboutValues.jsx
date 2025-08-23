@@ -6,23 +6,23 @@ const AboutValues = () => {
   const values = [
     {
       icon: <Briefcase className="w-12 h-12" />,
-      title: "Empowering Growth",
-      description: "Our mission is to empower individuals and businesses to achieve their full potential in the digital age."
+      title: "Student Innovation",
+      description: "We are Computer Science part 3 students, passionate about applying our learning to real-world projects."
     },
     {
       icon: <Users className="w-12 h-12" />,
-      title: "Social Impact",
-      description: "We believe in using technology to create positive social impact and support educational initiatives."
+      title: "Collaboration",
+      description: "We believe in teamwork, sharing ideas, and supporting each other to achieve the best results."
     },
     {
       icon: <Brain className="w-12 h-12" />,
-      title: "Knowledge Sharing",
-      description: "We actively contribute to the tech community through workshops, mentoring, and open-source projects."
+      title: "Continuous Learning",
+      description: "We are always learning new technologies and improving our skills to stay current and relevant."
     },
     {
       icon: <Rocket className="w-12 h-12" />,
-      title: "Sustainable Future",
-      description: "Committed to sustainable practices in technology and business operations for a better tomorrow."
+      title: "Ambition",
+      description: "Driven by curiosity and ambition, we aim to grow our experience and deliver quality solutions for our clients."
     }
   ];
 
@@ -36,11 +36,10 @@ const AboutValues = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Our Core Values
+            Our Student Values
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            These principles guide our work and shape our commitment to delivering 
-            exceptional digital solutions for our clients.
+            As Computer Science students, our values are rooted in learning, collaboration, and ambition. These principles guide our work and help us deliver fresh, effective digital solutions.
           </p>
         </motion.div>
 

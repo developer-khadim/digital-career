@@ -8,10 +8,10 @@ import From from '../../component/From';
 
 // Stats data
 const stats = [
-  { number: '500+', label: 'Projects Completed' },
+  { number: '10+', label: 'Projects Completed' },
   { number: '100%', label: 'Client Satisfaction' },
   { number: '24/7', label: 'Support Available' },
-  { number: '50+', label: 'Expert Team Members' }
+  { number: '4+', label: 'Expert Team Members' }
 ];
 
 // Benefits data

@@ -16,7 +16,7 @@ const testimonials = [
     role: "Startup Founder",
     company: "InnovateTech",
     content: "The mobile app developed by Digital Career Agency using Flutter was outstanding. Their attention to detail and commitment to quality really sets them apart from other agencies.",
-    rating: 5,
+    rating: 4,
     image: "https://randomuser.me/api/portraits/men/2.jpg"
   },
   {
@@ -24,7 +24,7 @@ const testimonials = [
     role: "Marketing Director",
     company: "Growth Media",
     content: "Their social media marketing strategies transformed our online presence. The team's creative approach and data-driven decisions helped us achieve remarkable growth.",
-    rating: 5,
+    rating: 4,
     image: "https://randomuser.me/api/portraits/women/3.jpg"
   },
   {
@@ -32,7 +32,7 @@ const testimonials = [
     role: "Student",
     company: "University of Technology",
     content: "I received excellent support for my computer science assignments. The team helped me understand complex concepts and improve my coding skills significantly.",
-    rating: 5,
+    rating:5,
     image: "https://randomuser.me/api/portraits/men/4.jpg"
   },
   {
@@ -40,7 +40,7 @@ const testimonials = [
     role: "Product Owner",
     company: "Digital First",
     content: "The AI solution provided by Digital Career Agency revolutionized our customer service. Their expertise in machine learning and data science is truly impressive.",
-    rating: 5,
+    rating: 3,
     image: "https://randomuser.me/api/portraits/women/5.jpg"
   },
   {

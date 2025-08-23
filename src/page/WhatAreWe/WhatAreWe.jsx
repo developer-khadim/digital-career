@@ -46,7 +46,7 @@ const WhatAreWe = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-4xl font-bold mb-2">50+</h3>
+              <h3 className="text-4xl font-bold mb-2">4+</h3>
               <p className="text-white/90">Team Members</p>
             </motion.div>
             <motion.div
@@ -55,8 +55,8 @@ const WhatAreWe = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              <h3 className="text-4xl font-bold mb-2">500+</h3>
-              <p className="text-white/90">Projects Completed</p>
+              <h3 className="text-4xl font-bold mb-2">4+</h3>
+              <p className="text-white/90">Clients Served</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -64,8 +64,8 @@ const WhatAreWe = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <h3 className="text-4xl font-bold mb-2">300+</h3>
-              <p className="text-white/90">Happy Clients</p>
+              <h3 className="text-4xl font-bold mb-2">24/7</h3>
+              <p className="text-white/90">Support Available</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -73,8 +73,8 @@ const WhatAreWe = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
             >
-              <h3 className="text-4xl font-bold mb-2">15+</h3>
-              <p className="text-white/90">Countries Served</p>
+              <h3 className="text-4xl font-bold mb-2">100%</h3>
+              <p className="text-white/90">Dedication</p>
             </motion.div>
           </div>
         </div>
