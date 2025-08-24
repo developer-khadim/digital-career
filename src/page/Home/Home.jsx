@@ -23,7 +23,7 @@ const Home = () => {
     <>
     <div className='overflow-x-hidden select-none'> 
       <Hero />
-      <HeroBottom />
+      {/* <HeroBottom />   */}
       <EasyProcess />
       <Specialized />
       <TechnologiesCrosale />
