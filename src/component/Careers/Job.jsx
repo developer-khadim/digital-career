@@ -143,7 +143,7 @@ const Job = () => {
             {/* CTA */}
             <div className="mt-6 text-center lg:text-right">
               <a
-                href="mailto:digitalcareerIT@gmail.com"
+                href="mailto:digitalcareeerit@gmail.com"
                 className="inline-block text-sm sm:text-base py-2.5 px-6 rounded-md font-bold bg-primary text-white hover:text-primary hover:bg-transparent hover:border-2 hover:border-primary transition-all duration-200 transform hover:scale-105 active:scale-95"
               >
                 Apply Now
