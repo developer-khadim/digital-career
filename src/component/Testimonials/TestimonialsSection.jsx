@@ -4,52 +4,52 @@ import TestimonialCard from './TestimonialCard';
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
+    name: "Ayesha Khan",
     role: "Project Manager",
-    company: "Tech Solutions Inc.",
-    content: "Digital Career Agency delivered exceptional results for our web development project. Their team's expertise in React and Node.js helped us create a scalable solution that exceeded our expectations.",
+    company: "PakTech Solutions",
+    content: "Working with Digital Career Agency was a fantastic experience. Their team's dedication and technical expertise helped us achieve our project goals ahead of schedule.",
     rating: 5,
-    image: "https://randomuser.me/api/portraits/women/1.jpg"
+    image: "https://i.pravatar.cc/150?img=1"
   },
   {
-    name: "Michael Chen",
+    name: "Ali Raza",
     role: "Startup Founder",
-    company: "InnovateTech",
-    content: "The mobile app developed by Digital Career Agency using Flutter was outstanding. Their attention to detail and commitment to quality really sets them apart from other agencies.",
+    company: "InnoPak",
+    content: "The team's understanding of modern technologies and ability to deliver quality solutions within budget made them our go-to development partner.",
     rating: 4,
-    image: "https://randomuser.me/api/portraits/men/2.jpg"
+    image: "https://i.pravatar.cc/150?img=3"
   },
   {
-    name: "Emily Rodriguez",
+    name: "Fatima Ahmed",
     role: "Marketing Director",
-    company: "Growth Media",
-    content: "Their social media marketing strategies transformed our online presence. The team's creative approach and data-driven decisions helped us achieve remarkable growth.",
-    rating: 4,
-    image: "https://randomuser.me/api/portraits/women/3.jpg"
-  },
-  {
-    name: "David Kim",
-    role: "Student",
-    company: "University of Technology",
-    content: "I received excellent support for my computer science assignments. The team helped me understand complex concepts and improve my coding skills significantly.",
-    rating:5,
-    image: "https://randomuser.me/api/portraits/men/4.jpg"
-  },
-  {
-    name: "Lisa Thompson",
-    role: "Product Owner",
-    company: "Digital First",
-    content: "The AI solution provided by Digital Career Agency revolutionized our customer service. Their expertise in machine learning and data science is truly impressive.",
-    rating: 3,
-    image: "https://randomuser.me/api/portraits/women/5.jpg"
-  },
-  {
-    name: "James Wilson",
-    role: "CTO",
-    company: "Future Systems",
-    content: "Working with Digital Career Agency on our enterprise software project was a great experience. Their full-stack development team delivered high-quality code on time.",
+    company: "GrowthHub Pakistan",
+    content: "Their innovative approach to digital solutions and responsive communication style made our project implementation smooth and successful.",
     rating: 5,
-    image: "https://randomuser.me/api/portraits/men/6.jpg"
+    image: "https://i.pravatar.cc/150?img=5"
+  },
+  {
+    name: "Hassan Malik",
+    role: "Computer Science Student",
+    company: "NUST",
+    content: "As a fellow student, I appreciate their academic support services. They helped me understand complex concepts and improve my project work significantly.",
+    rating: 5,
+    image: "https://i.pravatar.cc/150?img=7"
+  },
+  {
+    name: "Zara Sheikh",
+    role: "Product Owner",
+    company: "Digital Pakistan",
+    content: "Their attention to detail and commitment to quality helped us launch our product successfully. Highly recommended for any digital project.",
+    rating: 4,
+    image: "https://i.pravatar.cc/150?img=9"
+  },
+  {
+    name: "Omar Farooq",
+    role: "CTO",
+    company: "FutureTech Lahore",
+    content: "The team's technical expertise and professional approach made our collaboration extremely productive. They delivered exactly what we needed.",
+    rating: 5,
+    image: "https://i.pravatar.cc/150?img=11"
   }
 ];
 

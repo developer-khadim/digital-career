@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import teamwork from '../../assets/photo.png';
+import teamwork from '../../assets/Digital career logo.png';
 
 const AboutHistory = () => {
   return (

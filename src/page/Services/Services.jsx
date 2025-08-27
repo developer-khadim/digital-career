@@ -130,7 +130,7 @@ const Services = () => {
       </section>
 
       {/* Contact Form */}
-      <From />
+      {/* <From /> */}
     </motion.div>
   )
 }

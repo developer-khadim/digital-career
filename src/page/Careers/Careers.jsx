@@ -17,7 +17,7 @@ const Careers = () => {
     <>
       <div className='select-none' >
           <Hero/>
-        <From/>
+        {/* <From/> */}
       </div>
        
     </>

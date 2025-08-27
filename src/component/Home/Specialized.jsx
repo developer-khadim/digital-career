@@ -25,17 +25,12 @@ import fp from "../../assets/freelancning.png";
 
 const staff = [
   { icon: frontend, text: "Frontend Engineers" },
-  { icon: android, text: "Android Developers" },
-  { icon: angular, text: "Angular Developers" },
   { icon: fullstack, text: "Full-stack Engineers" },
-  { icon: php, text: "PHP Developers" },
+  { icon: android, text: "Android Developers" },
   { icon: ai, text: "AI / ML Engineers" },
-  { icon: devops, text: "DevOps Engineers" },
   { icon: uiux, text: "UI / UX Engineers" },
   { icon: data, text: "Data Scientists" },
   { icon: wordpress, text: "WordPress Developers" },
-  { icon: dba, text: "Database Admins" },
-  { icon: pm, text: "Project Managers" },
   {
     icon: ve,
     text: "Video Editing",

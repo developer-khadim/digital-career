@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import img from "../assets/formpic.png";
+import img from "../assets/laptop.jpg";
 
 const From = () => {
   return (

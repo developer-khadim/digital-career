@@ -185,7 +185,7 @@ const ModernProcess = () => {
   const [hoveredStep, setHoveredStep] = useState(null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
+    <div className=" bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
@@ -194,7 +194,7 @@ const ModernProcess = () => {
       </div>
 
       <div className="relative z-10 w-full px-4 py-16 sm:px-6 md:px-12 lg:px-20 xl:px-40">
-        <div className="max-w-7xl mx-auto">
+        <div className="w-full ">
           {/* Header Section */}
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 mb-6">
@@ -270,13 +270,6 @@ const ModernProcess = () => {
             ))}
           </div>
 
-          {/* Bottom CTA Section */}
-          <div className="mt-20 text-center">
-            <Link to="/contact" className="inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl text-white font-semibold text-lg shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105 cursor-pointer backdrop-blur-md border border-white/20">
-              <span>Ready to start your journey?</span>
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
         </div>
       </div>
 

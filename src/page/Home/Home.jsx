@@ -7,6 +7,7 @@ import TechnologiesCrosale from '../../component/Home/TechnologiesCrosale';
 import TestimonialsSection from '../../component/Testimonials/TestimonialsSection';
 import { useLocation } from 'react-router-dom';
 import From from '../../component/From';
+import Herosection from '../../component/Home/Herosection';
 
 const Home = () => {
   const location = useLocation(); // ✅ correct usage
@@ -22,13 +23,15 @@ const Home = () => {
   return (
     <>
     <div className='overflow-x-hidden select-none'> 
+      {/* <Herosection/> */}
+      
       <Hero />
       {/* <HeroBottom />   */}
       <EasyProcess />
       <Specialized />
       <TechnologiesCrosale />
       <TestimonialsSection />
-      <From/>
+      {/* <From/> */}
     </div>
     </>
   );

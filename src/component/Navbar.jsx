@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { RiMenu4Fill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';  
 
@@ -73,11 +73,17 @@ const Navbar = () => {
         {/* Desktop Actions */}
         <div className="hidden lg:flex items-center space-x-2 lg:space-x-4">
           
-          <Link to="/contact">
+            <a
+                          href="mailto:digitalcareeerit@gmail.com"
+                    className=" border-2 flex  items-center gap-2 border-secondary px-2 py-2 lg:px-3 rounded-md  hover:bg-secondary hover:text-white hover:border-secondary duration-300 text-secondary font-semibold text-sm lg:text-base transform hover:-translate-y-0.5 transition-all "
+                        >
+                         Contact Us
+                        </a>
+          {/* <Link to="/contact">
             <button className=" border-2 flex  items-center gap-2 border-secondary px-2 py-2 lg:px-3 rounded-md  hover:bg-secondary hover:text-white hover:border-secondary duration-300 text-secondary font-semibold text-sm lg:text-base transform hover:-translate-y-0.5 transition-all ">
               Contact Us <ArrowRight size={20} />
             </button>
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -150,13 +156,13 @@ const Navbar = () => {
                
                   ))}
                 {/* CTA */}
-                 <div className="mt-8 pt-6 px-6">
+                 {/* <div className="mt-8 pt-6 px-6">
                    <Link to="/contact" onClick={() => setIsOpen(false)}>
                      <button className="w-full bg-gradient-to-r from-primary to-secondary text-white py-4 px-6 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 text-lg font-semibold">
                        Contact Us
                      </button>
                    </Link>
-                 </div>
+                 </div> */}
               </nav>
             </motion.div>
           </>
