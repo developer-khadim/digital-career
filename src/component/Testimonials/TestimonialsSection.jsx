@@ -1,6 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import TestimonialCard from './TestimonialCard';
+import man1 from '../../assets/man1.jpg';
+import man3 from '../../assets/man2.jpg';
+import man2 from '../../assets/man3.jpg';
+import gril1 from '../../assets/girl1.jpg'
+
 
 const testimonials = [
   {
@@ -9,7 +14,7 @@ const testimonials = [
     company: "PakTech Solutions",
     content: "Working with Digital Career Agency was a fantastic experience. Their team's dedication and technical expertise helped us achieve our project goals ahead of schedule.",
     rating: 5,
-    image: "https://i.pravatar.cc/150?img=1"
+    image: "https://www.shutterstock.com/image-photo/pakistani-female-corporate-girl-portrait-260nw-2612992577.jpg"
   },
   {
     name: "Ali Raza",
@@ -17,7 +22,7 @@ const testimonials = [
     company: "InnoPak",
     content: "The team's understanding of modern technologies and ability to deliver quality solutions within budget made them our go-to development partner.",
     rating: 4,
-    image: "https://i.pravatar.cc/150?img=3"
+    image: man1
   },
   {
     name: "Fatima Ahmed",
@@ -25,7 +30,7 @@ const testimonials = [
     company: "GrowthHub Pakistan",
     content: "Their innovative approach to digital solutions and responsive communication style made our project implementation smooth and successful.",
     rating: 5,
-    image: "https://i.pravatar.cc/150?img=5"
+    image: "https://img.freepik.com/free-photo/young-pretty-model-is-smiling_114579-13323.jpg"
   },
   {
     name: "Hassan Malik",
@@ -33,7 +38,7 @@ const testimonials = [
     company: "NUST",
     content: "As a fellow student, I appreciate their academic support services. They helped me understand complex concepts and improve my project work significantly.",
     rating: 5,
-    image: "https://i.pravatar.cc/150?img=7"
+    image: man2
   },
   {
     name: "Zara Sheikh",
@@ -41,7 +46,7 @@ const testimonials = [
     company: "Digital Pakistan",
     content: "Their attention to detail and commitment to quality helped us launch our product successfully. Highly recommended for any digital project.",
     rating: 4,
-    image: "https://i.pravatar.cc/150?img=9"
+    image:gril1 
   },
   {
     name: "Omar Farooq",
@@ -49,7 +54,7 @@ const testimonials = [
     company: "FutureTech Lahore",
     content: "The team's technical expertise and professional approach made our collaboration extremely productive. They delivered exactly what we needed.",
     rating: 5,
-    image: "https://i.pravatar.cc/150?img=11"
+    image:man3
   }
 ];
 
