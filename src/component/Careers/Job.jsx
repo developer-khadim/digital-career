@@ -105,7 +105,6 @@ const Job = () => {
                   </h2>
                   <p className="text-sm text-gray-600">{job.description}</p>
                 </div>
-
                 {/* SKILLS */}
                 <div className="lg:col-span-5">
                   <h3 className="font-semibold text-gray-700 mb-2 lg:hidden">
