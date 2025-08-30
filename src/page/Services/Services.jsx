@@ -129,8 +129,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Contact Form */}
-      {/* <From /> */}
     </motion.div>
   )
 }
